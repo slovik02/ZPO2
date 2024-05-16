@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#86ADC1"
+    app:circularflow_defaultAngle="35"
+    app:circularflow_radiusInDP="35"
+    tools:context="MainActivity.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/layoutResults"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.729"
+        tools:ignore="MissingConstraints"> <!-- Center items vertically -->
+
+        <ImageButton
+            android:id="@+id/results"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/resultbut" />
+
+        <TextView
+            android:id="@+id/textResults"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="results"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutCalendar"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.249"
+        tools:ignore="MissingConstraints"> <!-- Center items vertically -->
+
+        <ImageButton
+            android:id="@+id/button"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/calendarimage" />
+
+        <TextView
+            android:id="@+id/textCalendar"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="calendar"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutContacts"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.56"
+        tools:ignore="MissingConstraints"> <!-- Center items vertically -->
+
+        <ImageButton
+            android:id="@+id/contacts"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/contactsbut" />
+
+        <TextView
+            android:id="@+id/textConcats"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="concats"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutMedication"
+        android:layout_width="320dp"
+        android:layout_height="66dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.412"
+        tools:ignore="MissingConstraints"> <!-- Center items vertically -->
+
+        <ImageButton
+            android:id="@+id/meds"
+            android:layout_width="47dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundstyle"
+            android:backgroundTint="#FFFFFF"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/tabs" />
+
+        <TextView
+            android:id="@+id/textMedication"
+            android:layout_width="213dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/andika"
+            android:text="medications"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="30sp" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/plus"
+        android:layout_width="85dp"
+        android:layout_height="68dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.921"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/Widget.MaterialComponents.Button.Icon"
+        android:layout_width="197dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/andika"
+        android:linksClickable="false"
+        android:text="add"
+        android:textAlignment="center"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.994"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

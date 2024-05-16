@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">ChAD</string>
+    <string name="contacts">Contacts</string>
+    <string name="homepage">homepage</string>
+    <string name="add">add</string>
+    <string name="kropki">...</string>
+    <string name="button">Button</string>
+    <string name="enter_name">enter name</string>
+    <string name="enter_surname">enter surname</string>
+    <string name="phone">phone :</string>
+    <string name="enter_phone_number">enter phone number</string>
+    <string name="err_msg_enter_email">Please enter your email</string>
+    <string name="err_msg_enter_name">Please enter your name</string>
+    <string name="err_msg_enter_password">Please enter your password</string>
+    <string name="err_msg_enter_reppassword">Please confirm your password</string>
+    <string name="err_msg_password_mismatch">Passwords mismatch</string>
+    <string name="login_successfull">You are logged in successfully</string>
+
+    <string-array name="tags">
+        <item>other</item>
+        <item>psychiatrist</item>
+        <item>psychologist</item>
+        <item>physiotherapist</item>
+        <item>endocrinologist</item>
+    </string-array>
+
+    <string-array name="yesno">
+        <item> </item>
+        <item>yes</item>
+        <item>no</item>
+    </string-array>
+</resources>
