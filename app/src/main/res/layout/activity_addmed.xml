@@ -110,7 +110,7 @@
             android:layout_height="38dp"
             android:ems="10"
             android:inputType="text"
-            android:text="enter name"
+            android:hint="enter name"
             android:textAlignment="center"
             android:textColor="#C8C8C8"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -120,7 +120,11 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="@+id/entername"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -145,7 +149,7 @@
             android:layout_height="38dp"
             android:ems="10"
             android:inputType="text"
-            android:text="enter dosage"
+            android:hint="enter dosage"
             android:textAlignment="center"
             android:textColor="#C8C8C8"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -168,12 +172,12 @@
 
         <EditText
             android:id="@+id/editTextText6"
-            android:layout_width="314dp"
-            android:layout_height="189dp"
+            android:layout_width="316dp"
+            android:layout_height="208dp"
             android:ems="10"
             android:inputType="text"
-            android:text="Name"
-            android:visibility="invisible"
+            android:text=""
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
