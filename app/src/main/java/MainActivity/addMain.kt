@@ -6,8 +6,10 @@ import android.content.Intent
 import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.Spinner
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -36,15 +38,15 @@ class addMain : AppCompatActivity() {
             insets
         }
 
+        addSleep = findViewById(R.id.sleep_add)
+        addSleep.setOnClickListener {
+            showSleepPop()
+        }
+
         // przycisk kontaktu
         homeButton = findViewById(R.id.imageButton)
         homeButton.setOnClickListener {
             goMain()
-        }
-
-        addSleep = findViewById(R.id.sleep_add)
-        addSleep.setOnClickListener {
-            showSleepPop()
         }
 
         addActivity = findViewById(R.id.activity_add)
@@ -71,7 +73,7 @@ class addMain : AppCompatActivity() {
     //do poprawy
     private fun showSleepPop(){
         val dialog = Dialog(this)
-        dialog.setContentView(R.layout.add_sleep_popup)
+        dialog.setContentView(R.layout.activity_add_sleep_popup)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
         val confirm = dialog.findViewById<Button>(R.id.confirmpop)
         confirm.setOnClickListener {

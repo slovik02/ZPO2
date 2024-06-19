@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "793068684204",
-    "project_id": "chad-8a546",
-    "storage_bucket": "chad-8a546.appspot.com"
+    "project_number": "883996103072",
+    "project_id": "chad-abd98",
+    "storage_bucket": "chad-abd98.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:793068684204:android:51c99c483e671ac22e3009",
+        "mobilesdk_app_id": "1:883996103072:android:50e47462bb13f6af0694c5",
         "android_client_info": {
           "package_name": "com.example.chad"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyDbxrwO-mXGOu8FjFUBgfZdCpie7jCQK6U"
+          "current_key": "AIzaSyAR1Bp-uKXB2DCTJaxRhWpXYK_UsdSQ7Fg"
         }
       ],
       "services": {
