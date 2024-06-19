@@ -43,6 +43,10 @@
             android:layout_width="190dp"
             android:layout_height="57dp"
             android:entries="@array/dosage"
+            android:backgroundTint="#000000"
+            android:foregroundTint="#000000"
+            android:textColor="#000000"
+            android:visibility="visible"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -131,6 +135,7 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="1.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/dosageinsrt"

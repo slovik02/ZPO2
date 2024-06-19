@@ -71,21 +71,52 @@ class addMain : AppCompatActivity() {
     }
 
     //do poprawy
-    private fun showSleepPop(){
+    private fun showSleepPop() {
         val dialog = Dialog(this)
         dialog.setContentView(R.layout.activity_add_sleep_popup)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val mySpinner = dialog.findViewById<Spinner>(R.id.spinner_pop1)
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.yesno,
+            R.layout.spinner_list
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        mySpinner.adapter = adapter
+
         val confirm = dialog.findViewById<Button>(R.id.confirmpop)
         confirm.setOnClickListener {
             dialog.dismiss()
         }
+
         dialog.show()
     }
 
     private fun showActivityPop(){
         val dialog = Dialog(this)
-        dialog.setContentView(R.layout.add_activity_popup)
+        dialog.setContentView(R.layout.activity_add_act_popup)
         dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+
+        val mySpinner: Spinner = dialog.findViewById(R.id.spinner_act)
+        val mySpinner2: Spinner = dialog.findViewById(R.id.spinner3)
+
+        val adapter = ArrayAdapter.createFromResource(
+            this,
+            R.array.activity,
+            R.layout.spinner_list
+        )
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        mySpinner.adapter = adapter
+
+        val adapter2 = ArrayAdapter.createFromResource(
+            this,
+            R.array.intens,
+            R.layout.spinner_list
+        )
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        mySpinner2.adapter = adapter2
+
         val confirmA = dialog.findViewById<Button>(R.id.confirmpopA)
         confirmA.setOnClickListener {
             dialog.dismiss()

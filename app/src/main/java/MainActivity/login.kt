@@ -16,6 +16,7 @@ import com.example.chad.R
 import com.google.android.material.snackbar.Snackbar
 import com.google.firebase.auth.FirebaseAuth
 
+
 class login : AppCompatActivity() {
     private var inputEmail: EditText? = null
     private var inputPassword: EditText? = null

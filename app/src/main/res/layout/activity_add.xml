@@ -118,7 +118,7 @@
         app:layout_constraintVertical_bias="0.405">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/contact_surname"
             android:layout_width="215dp"
             android:layout_height="54dp"
             android:ems="10"
@@ -249,7 +249,7 @@
         app:layout_constraintVertical_bias="0.255">
 
         <EditText
-            android:id="@+id/editTextText2"
+            android:id="@+id/contact_name"
             android:layout_width="212dp"
             android:layout_height="52dp"
             android:ems="10"

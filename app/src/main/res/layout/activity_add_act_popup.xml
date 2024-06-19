@@ -32,13 +32,19 @@
 
             <Spinner
                 android:id="@+id/spinner3"
-                android:layout_width="119dp"
-                android:layout_height="44dp"
+                android:layout_width="101dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#000000"
                 android:entries="@array/intens"
+                android:foregroundTint="#000000"
+                android:textColor="#000000"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <TextView
@@ -179,11 +185,16 @@
 
             <Spinner
                 android:id="@+id/spinner_act"
-                android:layout_width="107dp"
-                android:layout_height="35dp"
+                android:layout_width="101dp"
+                android:layout_height="42dp"
+                android:backgroundTint="#000000"
                 android:entries="@array/activity"
+                android:foregroundTint="#000000"
+                android:textColor="#000000"
+                android:visibility="visible"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0" />
