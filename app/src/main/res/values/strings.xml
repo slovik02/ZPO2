@@ -49,4 +49,9 @@
         <item>low</item>
     </string-array>
 
+    <string-array name="time">
+        <item>morning</item>
+        <item>day</item>
+        <item>evening</item>
+    </string-array>
 </resources>

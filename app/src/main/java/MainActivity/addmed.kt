@@ -1,8 +1,8 @@
-package MainActivity
-
-import android.content.Intent
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.os.Bundle
 import android.text.TextUtils
+import android.view.LayoutInflater
 import android.widget.ArrayAdapter
 import android.widget.Button
 import android.widget.EditText
@@ -28,29 +28,34 @@ class addmed : AppCompatActivity() {
             insets
         }
 
-        drugNameEditText = findViewById(R.id.entername) // Initialize EditText for drug name
-        dosageEditText = findViewById(R.id.enterdosage) // Initialize EditText for dosage
+        drugNameEditText = findViewById(R.id.entername)
+        dosageEditText = findViewById(R.id.enterdosage)
 
         val mySpinner: Spinner = findViewById(R.id.dosage_spin)
+        val mySpinner2: Spinner = findViewById(R.id.time_spin)
+
         val adapter = ArrayAdapter.createFromResource(
             this,
             R.array.dosage,
             R.layout.spinner_list
         )
+
+        val adapter2 = ArrayAdapter.createFromResource(
+            this,
+            R.array.time,
+            R.layout.spinner_list
+        )
+
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         mySpinner.adapter = adapter
 
-        // dodawanie leków
+        adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+        mySpinner2.adapter = adapter2
+
         confirm = findViewById(R.id.confirm)
         confirm.setOnClickListener {
             validateDetails()
         }
-    }
-
-    // Metoda do otwierania drugiej aktywności
-    private fun openMedsMain(){
-        val intent = Intent(this, medsMain::class.java)
-        startActivity(intent)
     }
 
     private fun validateDetails() {
@@ -66,23 +71,33 @@ class addmed : AppCompatActivity() {
             return
         }
 
-        // Regular expression to check if the drug name contains only letters
-        val drugNameRegex = Regex("^[a-zA-Z ]+\$") // Allows letters and spaces
-
+        val drugNameRegex = Regex("^[a-zA-Z ]+\$")
         if (!drugName.matches(drugNameRegex)) {
             drugNameEditText.error = "Drug name should contain only letters"
             return
         }
 
-        // Regular expression to check if the dosage contains only digits
-        val dosageRegex = Regex("^\\d+\$") // Allows only digits
-
+        val dosageRegex = Regex("^\\d+\$")
         if (!dosage.matches(dosageRegex)) {
             dosageEditText.error = "Dosage should contain only digits"
             return
         }
 
-        // Continue with your logic here (e.g., saving data, navigating to next screen)
-        openMedsMain()
+        showNotificationPopup()
+    }
+    // niedokończone
+    private fun showNotificationPopup() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.activity_notification_popup, null)
+        val dialogBuilder = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+
+        val alertDialog = dialogBuilder.create()
+        alertDialog.show()
+
+        val okButton: Button = dialogView.findViewById(R.id.ok_button)
+        okButton.setOnClickListener {
+            alertDialog.dismiss()
+        }
     }
 }
