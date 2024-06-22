@@ -11,28 +11,17 @@
         android:layout_height="260dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-
-        <CheckBox
-            android:id="@+id/no_check"
-            android:layout_width="68dp"
-            android:layout_height="47dp"
-            android:text="No"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.738"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.502" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <TextView
             android:id="@+id/question2"
             android:layout_width="244dp"
             android:layout_height="32dp"
             android:fontFamily="@font/andika"
-            android:text="Would you like to recive"
+            android:text="Select the time of"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -48,7 +37,7 @@
             android:layout_width="244dp"
             android:layout_height="32dp"
             android:fontFamily="@font/andika"
-            android:text="a reminder?"
+            android:text="the reminder"
             android:textAlignment="center"
             android:textColor="#000000"
             android:textSize="20sp"
@@ -59,34 +48,49 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.21" />
 
+        <!-- NumberPicker for minutes -->
+
+        <NumberPicker
+            android:id="@+id/hourPicker"
+            android:layout_width="80dp"
+            android:layout_height="74dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.245"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.559" />
+
+        <NumberPicker
+            android:id="@+id/minutePicker"
+            android:layout_width="80dp"
+            android:layout_height="74dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/NumberPickerStyle"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.86"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.559" />
+
+
         <Button
-            android:id="@+id/confirmpop"
+            android:id="@+id/confirm_notification"
             android:layout_width="91dp"
             android:layout_height="41dp"
             android:fontFamily="@font/andika"
-            android:text="confirm"
+            android:text="select"
             android:textAlignment="center"
             android:textAllCaps="false"
             android:textColor="#000000"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.55"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.98" />
-
-        <CheckBox
-            android:id="@+id/yes_check"
-            android:layout_width="68dp"
-            android:layout_height="47dp"
-            android:text="Yes"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.246"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.502" />
+            app:layout_constraintVertical_bias="0.926" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
