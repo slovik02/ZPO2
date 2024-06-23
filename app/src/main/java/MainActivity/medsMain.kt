@@ -2,6 +2,7 @@ package MainActivity
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageButton
 import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
@@ -12,6 +13,9 @@ import com.example.chad.R
 
 class medsMain : AppCompatActivity() {
     private lateinit var home: ImageButton
+    private lateinit var morning: Button
+    private lateinit var day: Button
+    private lateinit var evening: Button
     private lateinit var addmeds: LinearLayout
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +38,21 @@ class medsMain : AppCompatActivity() {
         addmeds.setOnClickListener {
             addmed()
         }
+
+        morning = findViewById(R.id.morning)
+        morning.setOnClickListener {
+            Morning()
+        }
+
+        day = findViewById(R.id.day)
+        day.setOnClickListener {
+            Day()
+        }
+
+        evening = findViewById(R.id.evening)
+        evening.setOnClickListener {
+            Evening()
+        }
     }
 
     private fun homeMain(){
@@ -43,6 +62,21 @@ class medsMain : AppCompatActivity() {
 
     private fun addmed(){
         val intent = Intent(this, addmed::class.java)
+        startActivity(intent)
+    }
+
+    private fun Morning(){
+        val intent = Intent(this, Morning::class.java)
+        startActivity(intent)
+    }
+
+    private fun Day(){
+        val intent = Intent(this, Day::class.java)
+        startActivity(intent)
+    }
+
+    private fun Evening(){
+        val intent = Intent(this, Evening::class.java)
         startActivity(intent)
     }
 }
