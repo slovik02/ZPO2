@@ -16,6 +16,9 @@
     <string name="err_msg_password_mismatch">Passwords mismatch</string>
     <string name="login_successfull">You are logged in successfully</string>
 
+    <string name="channel_name">Medication Reminder</string>
+    <string name="channel_description">Channel for medication reminders</string>
+
     <string-array name="tags">
         <item>other</item>
         <item>psychiatrist</item>

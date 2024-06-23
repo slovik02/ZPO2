@@ -8,22 +8,6 @@
     android:background="#86ADC1"
     tools:context="MainActivity.addmed">
 
-    <Button
-        android:id="@+id/reminder"
-        android:layout_width="117dp"
-        android:layout_height="57dp"
-        android:fontFamily="@font/andika"
-        android:text="reminder"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="#000000"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.746"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/timelay"
         android:layout_width="229dp"
@@ -85,7 +69,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.053" />
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/nameinsrt"
         android:layout_width="229dp"
@@ -136,7 +119,7 @@
         app:layout_constraintVertical_bias="0.422" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/dosageinsrt"
+        android:id="@+id/unit_spin"
         android:layout_width="229dp"
         android:layout_height="58dp"
         android:background="@drawable/roundstyle"
@@ -229,10 +212,10 @@
 
     <TextView
         android:id="@+id/comments"
-        android:layout_width="291dp"
-        android:layout_height="44dp"
+        android:layout_width="354dp"
+        android:layout_height="55dp"
         android:fontFamily="@font/andika"
-        android:text="additional comments"
+        android:text="Select time of a reminder"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="25sp"
@@ -243,9 +226,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.628" />
 
-
     <Button
-        android:id="@+id/confirm"
+        android:id="@+id/submitButton"
         android:layout_width="99dp"
         android:layout_height="57dp"
         android:fontFamily="@font/andika"
@@ -255,37 +237,53 @@
         android:textColor="#000000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.227"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.958" />
+        app:layout_constraintVertical_bias="0.951" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="338dp"
-        android:layout_height="133dp"
+        android:layout_width="350dp"
+        android:layout_height="128dp"
         android:background="@drawable/roundstyle"
         android:backgroundTint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.58"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.834">
 
-        <EditText
-            android:id="@+id/editTextText6"
-            android:layout_width="314dp"
-            android:layout_height="151dp"
-            android:ems="10"
-            android:inputType="text"
-            android:text=""
-            android:visibility="visible"
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="181dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="170dp"
+            android:layout_height="130dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            android:timePickerMode="spinner"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.953" />
+            app:layout_constraintVertical_bias="0.0" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
