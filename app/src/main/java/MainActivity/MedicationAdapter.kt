@@ -22,7 +22,7 @@ class MedicationAdapter(private val medicationsList: List<Medication>) :
     }
 
     override fun getItemCount(): Int {
-        return medicationsList.size.coerceAtMost(3) // Show up to 3 items
+        return medicationsList.size
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
